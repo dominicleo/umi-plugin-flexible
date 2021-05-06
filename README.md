@@ -1,27 +1,28 @@
-# vite-plugin-flexible
+# umi-plugin-flexible
 
-Vite plugin that automatically injects flexible scripts and converts pixel units to rem units
+umijs plugin that automatically injects flexible scripts and converts pixel units to rem units
 
 ### Install
 
 ```bash
-$ npm i vite-plugin-flexible -D
+$ npm i umi-plugin-flexible -D
 # or
-$ yarn add vite-plugin-flexible -D
+$ yarn add umi-plugin-flexible -D
 ```
 
 ### Usage
 
-Config plugin in vite.config.ts
+Config plugin in .umirc.ts
 
 ```javascript
-import { defineConfig } from 'vite';
-import flexible from 'vite-plugin-flexible';
+import { defineConfig } from 'umi';
 
 export default defineConfig({
-  plugins: [
-    flexible(),
-  ]},
+  postcss: {
+    rootValue: 37.5,
+    propList: ['*'],
+  },
+  plugins: [require.resolve('umi-plugin-flexible')],
 });
 ```
 
