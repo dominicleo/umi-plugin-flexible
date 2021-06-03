@@ -1,6 +1,6 @@
 {
   "name": "umi-plugin-flexible",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Umi plugin that automatically injects flexible scripts and converts pixel units to rem units",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
